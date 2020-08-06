@@ -1,0 +1,521 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ol,ul{
+    list-style-type: none;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+.fade{
+    opacity: 0;
+}
+.show{
+    opacity: 1;
+}
+.container{
+    width: 1280px;
+    margin: 0 auto;
+}
+/* 设置顶部样式 */
+#top{
+    height: 5px;
+    background-color: #00925f;
+}
+/* 设置头部样式 */
+#header{
+    height: 30px;
+    background-color: #2d2d2d;
+}
+#header .header_left div{
+    float: left;
+    margin: 5px 10px 0;
+}
+#header ul li{
+    float: right;
+}
+#header .xinlang{
+    width: 22px;
+    height: 20px;
+    background: url(../img/icons-1.png) no-repeat -145px -881px;  
+}
+#header .tengxun{
+    width: 22px;
+    height: 20px;
+    background: url(../img/icons-1.png) no-repeat -145px -910px;  
+}
+#header .tel{
+    color: #1e90ff;
+}
+#header ul li a{
+    color: rgb(150, 150, 150);
+    border-right: 1px solid rgb(150, 150, 150);
+    padding: 0 10px;
+    line-height: 30px;
+}
+#header ul li a:hover{
+    color: #add8e6;
+}
+#header .shop_car a{
+    border: none;
+    padding-left : 6px;    
+}
+#header .shop_car span{
+    width: 22px;
+    height: 20px;
+    background: url(../img/icons.png) no-repeat 0 -95px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+/* 设置导航栏的样式 */
+#nav{
+    height: 80px;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+#nav .logo{
+    float: left;
+    margin: auto 10px;
+}
+#nav ul li{
+    float: left;
+    line-height: 80px;
+    margin-left: 30px;
+}
+#nav ul{
+    float: right;
+    margin-right: 10px;
+}
+#nav ul li a{
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+#nav ul li a:hover{
+    color: #1e90ff;
+}
+
+/* 设置页面明星机型部分的样式 */
+#star{
+    height: 750px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+#star .star_top{
+    margin: 30px;
+}
+#star ul{ 
+    display: inline-block;
+}
+#star li{
+    width: 280px;
+    float: left;
+    padding: 0 10px;
+    transition: all 0.3s; 
+}
+#star li h2{
+    margin-top: 5px;
+}
+#star li p{   
+    margin-top: 5px;
+    font-size: 14px;
+    color: #bdbdbd;
+}
+#star .money{
+    font-size: 16px;
+    color: #00925f;
+}
+#star li a{
+    color: #00925f;
+}
+#star .b_line{
+    padding-bottom: 30px;
+    border-bottom: 4px solid #00925f;
+}
+#star li:hover{
+    transform: translateY(-10px);
+}
+#star li span{
+    width: 15px;
+    height: 15px;
+    background: url(../img/icons-1.png) no-repeat -178px -1014px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+#star .line{
+    height: 420px;
+    border-left: 1px solid #ffc0cb;
+    
+}
+#star .border1{
+    border-left: none;
+}
+
+/* 设置精选配件的样式 */
+#accessory{
+    height: 950px;
+    background-color: #f2f2f2;
+}
+#accessory .acc_top{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#accessory .acc_main{
+    width: 1090px;
+    height: 860px;
+    margin: 0 auto;
+}
+#accessory .acc_left{
+    width: 540px;
+}
+#accessory .acc_left div{
+    float: left;
+    border-bottom: 3px solid #eaeaea;
+    margin: 10px;
+    transition: all 0.3s;
+}
+#accessory .acc_left img{
+    width: 250px;
+}
+#accessory .acc_left div:last-child img{
+    width: 520px;
+}
+#accessory .acc_box{
+    width: 250px;
+    height: 250px;
+    font-size: 14px;
+    border: 3px solid #eaeaea;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#accessory .acc_box p:first-child{
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 1px solid #ccc; 
+}
+#accessory .acc_box li{
+    float: left;
+    width: 100px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+}
+#accessory .acc_box .line{
+    width: 150px;
+    height: 0;
+    border-top: 1px solid #ccc;
+    margin: 10px auto;
+    clear: both;
+}
+#accessory .acc_box span{
+    width: 15px;
+    height: 15px;
+    background: url(../img/icons-1.png) no-repeat -178px -1014px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+#accessory .acc_box p:last-child{
+    text-align: center;
+}
+#accessory .acc_text a{
+    color: #00925f;
+}
+#accessory .acc_left div:hover{
+    transform: translateY(-10px);
+    border-bottom-color: #4f859d ; 
+}
+#accessory .acc_right{
+    width: 540px;
+}
+#accessory .acc_right div{
+    margin: 10px;
+    border-bottom: 3px solid #eaeaea;
+    float: left;
+    transition: all 0.3s;
+}
+#accessory .acc_right img{
+    width: 250px;
+}
+#accessory .acc_right div:first-child img{
+    width: 520px;
+    height: 250px;
+}
+#accessory .acc_right div:last-child img{
+    height: 240px;
+}
+#accessory .acc_right div:hover{
+    transform: translateY(-10px);
+    border-bottom-color: #4f859d ; 
+}
+
+/* 设置搜索欧珀部分的样式 */
+#world{
+    height: 750px;
+    background-color: #f2f2f2;
+    overflow: hidden;
+}
+#world .world_top{
+    text-align: center;
+    margin: 30px 0;
+}
+#world .world_main{
+    width: 1250px;
+}
+#world .world_left{
+    width: 800px;
+}
+#world .world_left div{
+    float: left;
+    margin: 10px;
+    border-bottom: 3px solid #eaeaea;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+#world .world_left div:hover{
+    border-bottom: 3px solid #00925f;
+    transform: translateY(-10px);
+}
+#world .world_right{
+    width: 400px;
+    height: 566px;
+    margin-top: 10px;
+    background-color: #fff;
+}
+#world .world_right img{
+    width: 100px;
+    height: 100px;
+}
+#world .world_right .world_title{
+    height: 60px;
+}
+#world .world_right .world_title div{
+    width: 200px;
+    height: 60px;
+    background-color: #eaeaea;
+    text-align: center;
+    line-height: 60px;
+    float: left;
+    border-top: 3px solid #eaeaea;
+}
+#world .world_right .world_title div:first-child{
+    background-color: #fff;
+    border-top: 3px solid #00925f;
+}
+#world .world_right ul li{
+    background-color: #eaeaea;
+    margin: 20px 10px;
+}
+#world .world_right dl{
+    width: 380px;
+    height: 100px;
+    position: relative;
+}
+#world .world_right dl dd{
+    position: absolute;
+    top: 30px;
+    left: 130px;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+/* 设置售后服务的样式 */
+#after-sale{
+    height: 100px;
+    background-color: #fff;
+}
+#after-sale ul{
+    width: 1110px;
+    height: 98px;
+    margin: 0 auto;
+    border-bottom: 1px solid #666;
+}
+#after-sale li{
+    float: left;
+    margin: 0 10px;
+    transition: all 0.3s;
+}
+#after-sale li:hover{
+    transform: translateY(-10px);
+}
+#after-sale dl{
+    width: 200px;
+    height: 100px;
+    position: relative;
+}
+#after-sale li:first-child dl dt{
+    width: 42px;
+    height: 42px;
+    background: url(../img/icons.png) no-repeat 0 -43px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+#after-sale li:nth-child(2) dl dt{
+    width: 42px;
+    height: 42px;
+    background: url(../img/icons.png) no-repeat -51px -43px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+#after-sale li:nth-child(3) dl dt{
+    width: 42px;
+    height: 42px;
+    background: url(../img/icons.png) no-repeat -100px -43px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+#after-sale li:nth-child(4) dl dt{
+    width: 42px;
+    height: 42px;
+    background: url(../img/icons.png) no-repeat -151px -43px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+#after-sale li:nth-child(5) dl dt{
+    width: 42px;
+    height: 42px;
+    background: url(../img/icons.png) no-repeat -200px -43px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+#after-sale dl .dd1{
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    font-weight: bold;
+}
+#after-sale dl .dd2{
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    color: #888;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* 设置服务的样式 */
+#serve{
+    height: 200px;
+    background-color: #fff;
+}
+#serve ul{
+    display: table;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+#serve ul li{
+    width: 140px;
+    float: left;
+    text-align: center;
+    margin: 0 20px;
+}
+#serve ol>li{
+    margin: 10px 0;
+}
+#serve ol>li a{
+    font-size: 14px;
+    color: #555;
+}
+#serve ol>li:first-child a{
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+}
+#serve .xl{
+    width: 22px;
+    height: 20px;
+    background: url(../img/icons.png) no-repeat -47px -95px;
+    display: inline-block;  
+    vertical-align: middle;
+}
+#serve .tx{
+    width: 22px;
+    height: 20px;
+    background: url(../img/icons.png) no-repeat -24px -92px;
+    display: inline-block;
+    vertical-align: middle; 
+}
+#serve .rr{
+    width: 22px;
+    height: 20px;
+    background: url(../img/icons-1.png) no-repeat -3px -937px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#serve .f1{
+    font-size: 18px;
+    font-weight: bold;
+    color: #00925f;
+}
+#serve .f2{
+    font-size: 12px;
+    color: #555;
+    margin-top: 5px;
+}
+#serve .f3{
+    font-size: 18px;
+    font-weight: bold;
+    color: #00925f;
+}
+#serve .f4{
+    font-size: 12px;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* 设置页面底部的样式 */
+#footer{
+    height: 40px;
+    background-color: #2d2d2d;
+}
+#footer p{
+    line-height: 40px;
+}
+#footer img{
+    margin-left: 90px;
+}
+#footer p span{
+    font-size: 12px;
+    color: #828282;
+    margin: 0 300px 0 300px;
+}
+#footer p a{
+    font-size: 12px;
+    color: #fff;
+    margin: 0 10px;
+}
+#footer p a:hover{
+    color: #00925f;
+}
+/* 返回顶部的样式 */
+#totop{
+    width: 84px;
+    height: 76px;
+    position: fixed;
+    top: 600px;
+    left: 1260px;
+    background: url(../img/totop.png) no-repeat;
+}
+#btn{
+    width: 84px;
+    height: 76px;
+    display: block;
+}
